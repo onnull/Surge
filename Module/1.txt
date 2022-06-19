@@ -2,18 +2,6 @@
 哔哩哔哩换区
 https://raw.githubusercontent.com/Coldvvater/Shadowrocket/master/Module/Bili_Auto_Regions.module
 
-
-去广告重写
-https://raw.githubusercontent.com/xOS/Config/Her/Module/General/BlockAds.sgmodule
-
-
-去微博广告
-https://raw.githubusercontent.com/xOS/Config/Her/Module/General/Weibo.sgmodule
-
-
-去微信广告
-https://raw.githubusercontent.com/TPCTPCTPC/Adblock-gist/master/Module/Clear_WeChat.sgmodule
-
 boxjs
 https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.surge.sgmodule
 
@@ -25,7 +13,3 @@ https://github.com/iEwha/Profiles/raw/master/Surge/TikTok.sgmodule
 
 disney翻译
 https://github.com/DualSubs/DualSubs/blob/main/sgmodule/DualSubs.sgmodule?raw=true
-
-
-抖音去广告
-https://raw.githubusercontent.com/xOS/Config/Her/Module/iOS/DouYin.sgmodule
