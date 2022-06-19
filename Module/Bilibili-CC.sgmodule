@@ -9,7 +9,7 @@
 
 哔哩哔哩自动换区 = type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,pattern=https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,max-size=0,requires-body=true,timeout=10,enable=true
 
-哔哩哔哩策略切换 = type=http-response,pattern=https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,script-update-interval=0
+哔哩哔哩直连策略切换 = type=http-response,pattern=^https?:\/\/api\.bilibili\.com\/x\/offline\/version,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_startup_direct.js,script-update-interval=0
 
 
 [MITM]
