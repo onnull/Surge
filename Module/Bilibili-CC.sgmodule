@@ -14,4 +14,4 @@
 
 [MITM]
 
-hostname = %APPEND% *.hdslb.com,ap?.bilibili.com, ap?.biliapi.net
+hostname = %APPEND% *.hdslb.com, ap?.bilibili.com, ap?.biliapi.net, api.bilibili.com
