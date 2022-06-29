@@ -8,9 +8,6 @@ hostname = %APPEND% account.wps.cn, api.coolapk.com, weixin110.qq.com, security.
 
 
 [Script]
-# > WPS解锁超级V，wpsV，稻壳V
 WPS解锁超级V = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,script-update-interval=0,max-size=0
-# 酷安去广告
 酷安去广告 = type=http-response,pattern=https:\/\/api\.coolapk\.com\/v6\/feed\/detail.*,requires-body=1,max-size=0,script-path=https://github.com/Alex0510/Eric/raw/master/surge/Script/KA.js,script-update-interval=0
-#微信解除URL限制
 微信解除URL限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,script-update-interval=0
