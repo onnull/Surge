@@ -8,7 +8,7 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
 
 [MITM]
 
-hostname = %APPEND% account.wps.cn, api.coolapk.com, weixin110.qq.com, security.wechat.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, sub.store
+hostname = %APPEND% account.wps.cn, api.coolapk.com, weixin110.qq.com, security.wechat.com, sub.store
 
 
 [Script]
@@ -18,10 +18,6 @@ WPS解锁超级V = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\
 酷安去广告 = type=http-response,pattern=https:\/\/api\.coolapk\.com\/v6\/feed\/detail.*,requires-body=1,max-size=0,script-path=https://github.com/Alex0510/Eric/raw/master/surge/Script/KA.js,script-update-interval=0
 
 微信解除URL限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js,script-update-interval=0
-
-#微博去广告
-http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist)|video/tiny_stream_video_list|photo/info|remind/unread_count) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 
 #订阅转换
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
