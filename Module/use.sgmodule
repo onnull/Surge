@@ -1,11 +1,6 @@
 #!name=Tool
 #!desc=自用功能合集
 
-
-[General]
-
-force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
-
 [MITM]
 
 hostname = %APPEND% account.wps.cn, api.coolapk.com,
