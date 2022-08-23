@@ -1,0 +1,10 @@
+#!name=file
+#!desc=file内购
+
+[MITM]
+
+hostname = %APPEND% api.revenuecat.com
+
+[Script]
+
+酷安去广告 = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/v\d/(subscribers/\$RCAnonymousID\%(\w)+|receipts)$,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/onnull/Surge/main/Scripts/re.js,script-update-interval=0
