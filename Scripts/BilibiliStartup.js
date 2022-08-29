@@ -28,7 +28,7 @@ hostname=api.bilibili.com
 
 
 
-const Group = $prefs.valueForKey('BiliArea_Policy') || 'ʙɪʟɪʙɪʟɪ';
+const Group = $prefs.valueForKey('BiliArea_Policy') || 'Bilibili';
 
 const message = {
     action: "set_policy_state",
