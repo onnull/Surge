@@ -1,13 +1,3 @@
-/*
- * 由@fishingworld编写
- * 原脚本地址：https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js
- * 由@Rabbit-Spec修改
- * 更新日期：2022.06.15
- * 版本：1.5
-*/
-
-let params = getParams($argument)
-
 !(async () => {
 /* 时间获取 */
 let traffic = (await httpAPI("/v1/traffic","GET"))
