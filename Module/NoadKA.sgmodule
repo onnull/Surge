@@ -12,4 +12,4 @@ hostname = %APPEND% api.coolapk.com
 [URL Rewrite]
 
 ^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk - reject
-^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject
