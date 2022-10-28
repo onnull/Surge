@@ -3,7 +3,7 @@
 
 [Script]
 
-哔哩哔哩字幕 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_cc.js,script-update-interval=0
+哔哩哔哩字幕 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,max-size=0,script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/bilibili_cc.js,script-update-interval=0
 
 哔哩哔哩搜索 = type=http-request,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,timeout=10,enable=true
 
