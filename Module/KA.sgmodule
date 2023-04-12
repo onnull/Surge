@@ -1,9 +1,9 @@
 #!name=酷安去广告
 #!desc=去除酷安乱七八糟广告
 
-[Url Rewrite]
+[Map Local]
 #开屏广告
-^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/Keywos/Rule/main/mocks/reject-dict.json"
 
 [Script]
 推广广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/dataList,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
